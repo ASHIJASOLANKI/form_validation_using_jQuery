@@ -1,0 +1,81 @@
+<html>
+
+    <head>
+
+        <title>form validation</title>
+
+        <!-- css only-->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body >
+
+        <div class="success">
+            <img src="https://media.giphy.com/media/xULW8FacXhXGJIcv7i/giphy.gif" height="100px" alt="Congratulations" >
+            <p>You are registered.</p>
+        </div>
+        
+        <div class="wrapper">
+
+            <!-- ============ firstname =============== -->
+
+            <h2 style="text-align: center; color: rgb(66, 133, 95);">Sign - Up</h2>
+            <div class="formelement">
+                <label for="firstname">First name</label>
+                <input id="firstname" type="text" name="firstname" required>
+                <small id="firstnameCheck" onfocusout="validateFirstName()">**Mandatory</small>
+            </div>
+
+            <!-- ============ lastname =============== -->
+            
+            <div class="formelement">
+                <label for="lastname">Last name</label>
+                <input id="lastname" type="text" name="lastname" required>
+                <small id="lastnameCheck" onfocusout="validateLastName()">**Mandatory</small>
+            </div>
+
+            <!-- ============ E-mail =============== -->
+
+            <div class="formelement">
+                <label for="email">E-mail Address</label>
+                <input id="email" type="email" name="email"required>
+                <small id="emailCheck" onfocusout="validateEmail()">**Mandatory</small>
+            </div>
+
+            <!-- ============ Mobile Number =============== -->
+
+            <div class="formelement">
+                <label for="mobilenumber">Mobile Number</label>
+                <input id="mobilenumber" type="integer" name="mobilenumber">
+                <small id="mobilenumberCheck" onfocusout="validateMobilenumber()">**Mandatory</small>
+            </div>
+
+            <!-- ============ password =============== -->
+
+            <div class="formelement">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password">
+                <small id="passwordCheck" onfocusout="validatePassword()">**Mandatory</small>
+            </div>
+
+            <!-- ============ Confirm password =============== -->
+
+            <div class="formelement">
+                <label for="confirmPassword">Confirm-Password</label>
+                <input id="confirmPassword" type="password" name="confirmPassword">
+                <small id="confirmPasswordCheck">**Mandatory</small>
+            </div>
+
+            <!-- input button -->
+            <input id="submitbutton" type="submit" value="Submit">
+
+        </div>
+
+        <!-- js only -->
+        <script src="jquery.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+
+</html>

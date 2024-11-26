@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    background-color: rgb(107, 187, 142);
+    justify-content: center;
+}
+.wrapper {
+    width: 550px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 80px;
+}
+h2{
+    margin-top: 0;
+}
+label {
+    width: 200px;
+    float: left;
+    position: relative;
+    top: 12px;
+}
+input {
+    width: 320px;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px 10px 5px;
+}
+small {
+    display: block;
+    float: right;
+    font-size: small;
+    color: red;
+}
+.formelement {
+    margin-bottom: 20px;
+}
+#submitbutton {
+    width: 130px;
+    margin-left: 200px;
+    background-color: rgb(66, 133, 95);
+    color: #fff;
+    border: 0;
+}
+
+
+/* -------------------------- success ------------------------ */
+
+.success {
+    text-align: center;
+    color: green;
+    margin-top: 200px;
+    display: none;
+}
+.success p {
+    font-size: xxx-large;
+    font-weight: normal;
+    display: block;
+}
